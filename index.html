@@ -60,18 +60,18 @@
 $(document).ready(function(){
     $("#pinkboard").css("display","none");
     var i = 0;
-    var txt = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">\n<HTML>\n     <HEAD>\n        <TITLE> Heart </TITLE>\n        <META NAME="Author" CONTENT="Hungdv">\n        <META NAME="Keywords" CONTENT="Aly">\n        <META NAME="Description" CONTENT="Thắp sáng tôi, sưởi ấm em">\n        <style>\n        html, body {\n                height: 100%;\n                padding: 0;\n                margin: 0;\n                background: black;\n        }\n        canvas {\n                position: absolute;\n                width: 100%;\n                height: 100%;\n        }\n    </style>\n </HEAD>\n    \n     <BODY>\n        <canvas id="pinkboard">Khi nào chúng ta được gặp nhau</canvas>\n</BODY>\n</HTML>';
+    //var txt = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">\n<HTML>\n     <HEAD>\n        <TITLE> Heart </TITLE>\n        <META NAME="Author" CONTENT="Hungdv">\n        <META NAME="Keywords" CONTENT="Aly">\n        <META NAME="Description" CONTENT="Thắp sáng tôi, sưởi ấm em">\n        <style>\n        html, body {\n                height: 100%;\n                padding: 0;\n                margin: 0;\n                background: black;\n        }\n        canvas {\n                position: absolute;\n                width: 100%;\n                height: 100%;\n        }\n    </style>\n </HEAD>\n    \n     <BODY>\n        <canvas id="pinkboard">Khi nào chúng ta được gặp nhau</canvas>\n</BODY>\n</HTML>';
     var speed = 1;
 
-    function typeWriter() {
+    /*function typeWriter() {
     if (i < txt.length) {
         document.getElementById("demo").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
     }
     }
-    typeWriter();
-    var myVar = setTimeout(showheart, 5000);
+    typeWriter();*/
+    var myVar = setTimeout(showheart, 0);
 });  
 function showheart() {
     $("#demo").remove();
